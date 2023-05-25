@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokeapi.co harjoitus</title>
+</head>
+<body>
+   
+
+    <div id="center">
+      
+        <header>
+            <a href="#" id="homeLink" onclick="showHomeView()"><h1>My Pokemon Web App</h1></a>
+        </header>
+
+        <nav>
+            <a href="#" id="listLink" onclick="showListView()">All Pokemon</a>
+            <a href="#" id="searchLink" onclick="showSearchView()">Search</a>
+            <a href="#" id="favLink" onclick="showFavView()">Favorites</a>
+        </nav>
+
+        
+        <div id="listView">
+            <ol id="list"></ol>
+        </div>
+
+        <div id="searchView">
+            <form>
+                <input type="text" id="search" list="pokemonNames" placeholder="Type Pokemon name">
+                <datalist id="pokemonNames"></datalist>
+                <input type="submit" value="Search" id="searchBtn">
+            </form>
+           
+            <h2>Your latest searches</h2>
+            <button id="toggleBtn">Piilota/näytä</button>
+            <div id="pokeList"></div>
+            <div id="pokeList"></div>
+        </div>
+
+       
+    </div>
+    <script src="app.js"></script>  
+    <script src="navigation.js"></script> 
+    
+   <p>Irwin Goodman :D</p> 
+    <img src="irwin.png" >
+</body>
+</html>
